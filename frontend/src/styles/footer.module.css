@@ -1,0 +1,76 @@
+/* Global Styles */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+}
+
+#__next { /* The wrapper for Next.js pages */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
+}
+
+main {
+  flex: 1; /* Takes up the remaining space */
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #e1e1e1;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: "Outfit", sans-serif;
+  width: 100%;
+  max-width: 1140px;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  margin: 0 auto; /* Center the footer within the container */
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.navLinks {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+.navLinks a {
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.divider {
+  border: 0;
+  height: 1px;
+  background: #ccc;
+  margin: 20px 0;
+}
+
+.bottomSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+.bottomSection .address {
+  flex: 1;
+  text-align: center;
+}
+.bottomSection .socialIcons {
+  display: flex;
+  gap: 15px;
+}
+.bottomSection a {
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+}/*# sourceMappingURL=footer.module.css.map */

@@ -1,0 +1,70 @@
+/* Footer Styles */
+.footer {
+  background-color: #e1e1e1;
+  padding: 25px 20px;
+  
+  font-family: "Outfit", sans-serif;
+  text-align: center;
+  width: 100%;
+  max-width: 1185px;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  margin: 0 auto; /* Center the footer within the container */
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.navLinks {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 20px;
+
+  a {
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+  }
+}
+
+.divider {
+  border: 0;
+  height: 1px;
+  background: #000000;
+  margin: 20px 0;
+  width: 60%;
+
+  
+  margin-left: 250px;
+  margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+.bottomSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 14px;
+
+  .address {
+    flex: 1;
+    text-align: center;
+  }
+
+  .socialIcons {
+    display: flex;
+    gap: 15px;
+  }
+
+  a {
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap");
+
+.billingPage {
+  font-family: 'Outfit', sans-serif;
+  
+
+  .content {
+    margin-left: 50px;
+    padding: 20px;
+
+  padding-bottom: 100px;
+
+    .breadcrumb {
+        
+      margin-bottom: 20px;
+      font-size: 14px;
+      color: #666;
+
+      span {
+        cursor: pointer;
+      }
+    }
+
+    .container {
+        width: 100%;
+  max-width: 1180px;
+      display: flex;
+      justify-content: space-between;
+
+      .results {
+        
+        width: 60%;
+        border: 1px solid #eaeaea;
+        padding: 20px;
+        border-radius: 8px;
+
+        h2 {
+          margin-bottom: 20px;
+          font-size: 18px;
+          color: #333;
+        }
+
+        .resultRow {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 15px;
+
+          .icon {
+            font-size: 24px;
+            color: #ff9900;
+          }
+
+          .description {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            font-size: 16px;
+            color: #333;
+
+            span:last-child {
+              margin-left: auto;
+            }
+          }
+        }
+      }
+
+      .cardTotals {
+        width: 30%;
+        border: 1px solid #eaeaea;
+        padding: 20px;
+        border-radius: 8px;
+
+        h2 {
+          margin-bottom: 20px;
+          font-size: 18px;
+          color: #333;
+        }
+
+        .totalRow {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 10px;
+          font-size: 16px;
+          color: #333;
+        }
+
+        .checkoutButton {
+          width: 100%;
+          padding: 10px;
+          background-color: #008060;
+          color: white;
+          font-size: 16px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+
+          &:hover {
+            background-color: #00684a;
+          }
+        }
+      }
+    }
+  }
+}

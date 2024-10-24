@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures the container takes full viewport height */
+}
+
+.mainContent {
+  flex: 1; /* Takes up remaining space between navbar and footer */
+}
+
+.footer {
+  background-color: #e1e1e1;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto; /* Pushes footer to the bottom */
+}
+
+.logo {
+  margin-bottom: 10px;
+}
+
+.navLinks {
+  margin-bottom: 10px;
+}
+
+.navLinks a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.divider {
+  width: 100%;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 10px 0;
+}
+
+.bottomSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.address {
+  margin-top: 10px;
+}
+
+.socialIcons a {
+  margin: 0 10px;
+  color: #333;
+  font-size: 20px;
+}/*# sourceMappingURL=aboutus.module.css.map */

@@ -1,0 +1,149 @@
+// /styles/Home.module.scss
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap");
+
+.container {
+  font-family: 'Outfit', Arial, sans-serif; // Update font-family here
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+
+  h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    background-color: #2e563f;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: 'Outfit', Arial, sans-serif; // Update font-family here
+  }
+}
+
+.mainContent {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.appointmentSection {
+  flex: 2;
+  margin-right: 30px;
+
+  h2 {
+    font-size: 1.75rem;
+    color: #2e563f;
+    font-family: 'Outfit', Arial, sans-serif; // Update font-family here
+  }
+
+  p {
+    margin-top: 10px;
+    color: #555;
+    font-family: 'Outfit', Arial, sans-serif; // Update font-family here
+  }
+}
+
+.scheduleSection {
+  flex: 1;
+}
+
+.appointmentForm {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #2e563f;
+    font-family: 'Outfit', Arial, sans-serif; // Update font-family here
+  }
+
+  p {
+    margin-bottom: 20px;
+    color: #888;
+    font-family: 'Outfit', Arial, sans-serif; // Update font-family here
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    input, select, button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 1rem;
+      font-family: 'Outfit', Arial, sans-serif; // Update font-family here
+    }
+
+    button {
+      background-color: #2e563f;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      font-family: 'Outfit', Arial, sans-serif; // Update font-family here
+
+      &:hover {
+        background-color: #004d2e;
+      }
+    }
+  }
+
+  .formRow {
+    display: flex;
+    gap: 15px;
+
+    input, select {
+      flex: 1;
+    }
+  }
+}
+
+.scheduleHours {
+  background-color: #2e563f;
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-family: 'Outfit', Arial, sans-serif; // Update font-family here
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+
+    li {
+      font-size: 1rem;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      font-family: 'Outfit', Arial, sans-serif; // Update font-family here
+    }
+  }
+
+  .emergencyContact {
+    p {
+      font-size: 1rem;
+      margin-bottom: 5px;
+      font-family: 'Outfit', Arial, sans-serif; // Update font-family here
+    }
+
+    h4 {
+      font-size: 1.25rem;
+      margin: 0;
+      font-family: 'Outfit', Arial, sans-serif; // Update font-family here
+    }
+  }
+}

@@ -1,0 +1,25 @@
+/* src/styles/navbar.scss */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e1e1e1;
+  border-radius: 25px 25px 25px 25px;
+  padding: 16px 32px;
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding-left: 50px;
+}
+.navbar .nav-links {
+  display: flex;
+  gap: 46px;
+}
+.navbar .nav-links a {
+  color: #2d5b47;
+  text-decoration: none;
+}
+.navbar .nav-links a:hover {
+  color: #666;
+}/*# sourceMappingURL=navbar.css.map */

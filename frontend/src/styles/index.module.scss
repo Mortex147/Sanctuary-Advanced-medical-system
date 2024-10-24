@@ -1,0 +1,586 @@
+// src/styles/index.module.scss
+
+// Importing Google font
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap");
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.rectangle {
+  background-color: #2d5b47;
+  border-radius: 25px;
+  width: 89%;
+  height: 220px;
+  padding: 150px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  transition: background-color 0.3s, transform 0.3s;
+
+  &:hover {
+    background-color: #244f3c; // Darker shade for hover
+    transform: scale(1.02); // Slight zoom effect
+  }
+}
+
+.heading-wrapper {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+
+.heading {
+  font-family: "Outfit", sans-serif;
+  font-size: 200px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #c6defd;
+  margin: 0;
+  text-align: center;
+}
+
+.image-wrapper {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  z-index: 1;
+}
+
+.image {
+  max-width: 30%;
+  height: auto;
+  transition: opacity 0.3s, transform 0.3s;
+
+  &:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+.text-wrapper {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #c6defd;
+}
+
+.diagnosis-wrapper {
+  top: 250px;
+  left: 24%;
+}
+
+.appointments-wrapper {
+  top: 250px;
+  right: 24%;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  transition: color 0.3s;
+
+  &:hover {
+    color: #fff; // Change color on hover
+  }
+}
+
+.small-rectangles-container {
+  display: flex;
+  justify-content: space-between;
+  width: 93%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.small-rectangle {
+  position: relative;
+  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+  margin: 0px 5px;
+  padding: 20px;
+  padding-top: 50px;
+  color: #fff;
+  text-align: left;
+  transition: background-color 0.3s, transform 0.3s;
+
+  &:hover {
+    background-color: #a6d9b8; // Darker shade for hover
+    transform: scale(1.03);
+  }
+}
+
+.title {
+  font-family: "Outfit", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: #2d5b47;
+  letter-spacing: -0.02em;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18.9px;
+  letter-spacing: -0.02em;
+  color: #252b61;
+}
+
+.color1 {
+  background-color: #a3dac2;
+}
+.color2 {
+  background-color: #6bc39d;
+}
+.color3 {
+  background-color: #b1ecd2;
+}
+.color4 {
+  background-color: #92bdf6;
+}
+.color5 {
+  background-color: #e6c1d3;
+}
+
+.rectangle_button {
+  position: absolute;
+  bottom: 19px;
+  transition: background-color 0.3s, transform 0.3s;
+
+  &:hover {
+    // Darker shade for hover
+    transform: scale(1.1);
+  }
+}
+
+.icon1 {
+  width: 44px;
+  height: 44px;
+}
+
+.rectangle_img {
+  position: absolute;
+  bottom: 1px;
+  left: 80px;
+  mix-blend-mode: multiply;
+  opacity: 80%;
+}
+
+.icon2 {
+  width: 200px;
+  height: 200px;
+}
+
+.reviews-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 100%;
+  max-width: 1180px;
+  box-sizing: border-box;
+}
+
+.reviews-title {
+  font-family: "Outfit", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #2d5b47;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.reviews-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1180px;
+  gap: 20px;
+}
+
+.large-rectangle {
+  position: relative;
+  border-radius: 35px;
+  width: 50%;
+  height: 300px;
+  background-color: #6bc39d;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 40px;
+  transition: background-color 0.3s, transform 0.3s;
+
+  &:hover {
+    background-color: #5a9a80; // Darker shade for hover
+    transform: scale(1.02);
+  }
+}
+
+.large-title {
+  padding-top: 10px;
+  font-family: "Outfit", sans-serif;
+  font-size: 33px;
+  font-weight: 600;
+  color: #2d5b47;
+  margin-bottom: 5px;
+}
+
+.large-subtitle {
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #252b61;
+  margin-bottom: 20px;
+}
+
+.large-img-container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  bottom: -20px;
+}
+
+.large-arrow-img {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+}
+
+.large-picture {
+  position: absolute;
+  width: 330px;
+  height: 330px;
+  padding-left: 300px;
+  bottom: -40px;
+  mix-blend-mode: multiply;
+  opacity: 100%;
+}
+
+.small-rectangles-column {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.small-rectangles-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+  padding-left: 10px;
+  max-width: 1180px;
+}
+
+.wide-rectangle {
+  position: relative;
+  border-radius: 35px;
+  width: 100%;
+  height: 150px;
+  background-color: #66a7fe;
+  padding: 5px;
+  color: #fff;
+  text-align: left;
+  margin-bottom: 20px;
+  transition: background-color 0.3s, transform 0.3s;
+
+  &:hover {
+    background-color: #5590e3; // Darker shade for hover
+    transform: scale(1.02);
+  }
+}
+
+.small-rectangle-top {
+  position: relative;
+  border-radius: 35px;
+  flex: 1;
+  height: 140px;
+  background-color: #a3dac2;
+  padding: 10px;
+  color: #fff;
+  text-align: left;
+  margin-bottom: 0;
+  transition: background-color 0.3s, transform 0.3s;
+
+  &:hover {
+    background-color: #8bbf9b; // Darker shade for hover
+    transform: scale(1.02);
+  }
+}
+
+.title1 {
+  position: absolute;
+  font-family: "Outfit", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 44.55px;
+  color: white;
+  letter-spacing: -0.02em;
+  text-align: left;
+  padding-top: 50px;
+  padding-left: 20px;
+}
+
+.subtitle {
+  font-family: "Outfit", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #252b61;
+}
+
+.icon3 {
+  position: absolute;
+  left: 120px;
+  bottom: 20px;
+  width: 130px;
+  height: 130px;
+  mix-blend-mode: multiply;
+  opacity: 100%;
+}
+
+.icon4 {
+  position: absolute;
+  left: 320px;
+  bottom: -5px;
+  width: 170px;
+  height: 170px;
+  mix-blend-mode: multiply;
+  opacity: 100%;
+}
+
+.title2 {
+  position: absolute;
+  font-family: "Outfit", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 72.19px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #252b61;
+  top: 50px;
+  left: 20px;
+}
+
+.subtitle2 {
+  position: absolute;
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18.9px;
+  letter-spacing: -0.02em;
+  color: #252b61;
+  top: 110px;
+  left: 20px;
+}
+
+.appointment-section {
+  position: relative;
+  margin: 50px 0;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 100%;
+  max-width: 1190px;
+}
+
+.appointment-rectangle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #214535;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: background-color 0.3s, transform 0.3s;
+
+  &:hover {
+    background-color: #1a3c28; // Darker shade for hover
+    transform: scale(1.02);
+  }
+}
+
+.appointment-rectangle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/site pics/99.png");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.07;
+  z-index: 0;
+}
+
+.form-container {
+  display: flex;
+  flex: 1;
+  gap: 20px;
+  padding-right: 90px;
+}
+
+.form-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-label {
+  font-family: "Outfit", sans-serif;
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: "Outfit", sans-serif;
+  font-size: 14px;
+  transition: border-color 0.3s;
+
+  &:focus {
+    border-color: #2d5b47; // Highlight border on focus
+  }
+}
+
+.input-row {
+  display: flex;
+  gap: 15px;
+}
+
+.right-side {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.book-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 20px;
+  font-family: "Outfit", sans-serif;
+}
+
+.book-button {
+  background-color: #2d5b47;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Outfit", sans-serif;
+  transition: background-color 0.3s, transform 0.3s;
+
+  &:hover {
+    background-color: #0033aa;
+    transform: scale(1.05);
+  }
+} /* src/styles/index.module.scss */
+.queueSystemSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+  max-width: 1180px;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.queueSystemRectangle {
+  background-color: #bbccc5; /* Gray background */
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1190px; /* Adjusted maximum width */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+}
+
+.queueImageWrapper {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start; /* Align image to the left */
+}
+
+.queueImage {
+  max-width: 370px; /* Adjust image size */
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
+  padding-left: 100px;
+}
+
+.textContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center text vertically */
+  padding-left: 20px; /* Add padding to separate text from the image */
+}
+
+.queueTitle {
+  font-family: "Outfit", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #2d5b47; /* Green color for the title */
+  margin-bottom: 10px;
+  text-align: left; /* Align text to the left */
+}
+
+.subtitle3 {
+  font-family: "Outfit", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #252b61; /* Same green color for consistency */
+  margin-bottom: 20px;
+  text-align: left; /* Align subtitle to the left */
+}
+
+.learnMoreButton {
+  background-color: white; /* White background */
+  color: #2d5b47; /* Green text color */
+  border: 2px solid #2d5b47; /* Green border */
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Outfit", sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease;
+  align-self: flex-start; /* Align button to the start */
+}
+
+.learnMoreButton:hover {
+  background-color: #2d5b47; /* Green background on hover */
+  color: white; /* White text on hover */
+  border-color: #2d5b47; /* Green border on hover */
+}

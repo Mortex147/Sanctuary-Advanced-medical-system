@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap");
+.overlay {
+  background-color: #666666;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: white;
+  padding: 40px;
+  border-radius: 20px;
+  display: flex;
+  max-width: 800px; /* Adjusted width */
+  width: 100%;
+  height: 580px; /* Adjusted height */
+  flex-direction: column; /* Stack logo and sections vertically */
+  position: relative;
+  box-sizing: border-box; /* Ensure padding is included in width/height */
+}
+
+.logo {
+  text-align: center; /* Center the logo horizontally */
+  margin-bottom: 20px; /* Space below the logo */
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #333;
+}
+
+.section {
+  flex: 1;
+  padding: 20px;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400; /* Lighter weight for titles */
+}
+
+.inputWrapper {
+  margin-bottom: 20px; /* Space between fields */
+}
+
+.inputLabel {
+  font-family: "Outfit", sans-serif;
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: block;
+  font-weight: 400; /* Lighter weight for labels */
+}
+
+.input {
+  width: calc(100% - 20px); /* Adjust width to be a little smaller */
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px; /* Increased border radius */
+  font-family: "Outfit", sans-serif;
+}
+
+.forgotPassword {
+  display: block;
+  text-align: right;
+  margin-bottom: 20px;
+  color: #4285f4;
+  text-decoration: none;
+  font-size: 13px;
+  font-family: "Outfit", sans-serif;
+}
+
+.forgotPassword:hover {
+  text-decoration: underline;
+}
+
+.loginButton {
+  width: 35%;
+  background-color: rgba(51, 102, 81, 0.7607843137);
+  color: white;
+  padding: 15px 0;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-left: 105px;
+  font-family: "Outfit", sans-serif;
+}
+
+.loginButton:hover {
+  background-color: #2f3a1e;
+}
+
+.button {
+  width: 100%;
+  background-color: white;
+  color: #333333;
+  padding: 15px 0;
+  border: 1px solid;
+  border-radius: 35px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin-left: 20px;
+  font-family: "Outfit", sans-serif;
+}
+
+.button:hover {
+  background-color: #d6cdcd;
+}
+
+.subtitle {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+  font-family: "Outfit", sans-serif;
+}
+
+.divider {
+  width: 1px;
+  background-color: #ccc;
+  margin: 0 20px;
+  height: 100%;
+}/*# sourceMappingURL=login.module.css.map */

@@ -1,0 +1,153 @@
+.container {
+  font-family: "Outfit", Arial, sans-serif;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.header {
+  text-align: start;
+  margin-bottom: 50px;
+
+  h1 {
+    color: #2e563f;
+    font-family: "Outfit", Arial, sans-serif;
+    line-height: 52.19px;
+    font-size: 45px;
+    font-weight: 510;
+    text-align: left;
+  }
+
+  p {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #000000;
+    font-family: "Outfit", Arial, sans-serif;
+  }
+}
+
+.about {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  margin-bottom: 50px;
+
+  .large-rectangle {
+    background-color: #2D5B47;
+    color: #fff;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px; /* Adjust width as needed to make it a square */
+    height: 300px; /* Adjust height to match the width */
+    justify-content: center;
+
+    .aboutText {
+      font-weight: 10;
+      text-align: start;
+      
+    }
+
+    .aboutImageWrapper {
+      position: absolute;
+      right: -530px; /* Adjust to move image outside the rectangle */
+      top: 40 ;
+      max-width: 110%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.contactUs {
+  text-align: center;
+  margin-bottom: 50px;
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #2e563f;
+    font-family: "Outfit", Arial, sans-serif;
+  }
+
+  .infoCards {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    gap: 30;
+
+    .infoCard {
+      background: #2e563f;
+      color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      width: 30%;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 10px; /* Add spacing between info cards */
+
+      h3 {
+        font-size: 1rem;
+        margin-bottom: 10px;
+        font-family: "Outfit", Arial, sans-serif;
+      }
+
+      p {
+        font-size: 0.9rem;
+        font-family: "Outfit", Arial, sans-serif;
+      }
+    }
+  }
+
+.contactSection {
+  display: flex;
+  align-items: flex-start; /* Align items to the start of the container */
+  gap: 20px; /* Add space between the form and map */
+}
+
+.contactForm {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+ 
+  margin-right: 20px;
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: "Outfit", Arial, sans-serif;
+  }
+
+  button {
+    padding: 10px 20px;
+    background: #2e563f;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: "Outfit", Arial, sans-serif;
+width: 40%;
+    &:hover {
+      background: #004d2e;
+    }
+  }
+}
+
+.mapLocation {
+  flex: 1;
+  iframe {
+    width: 100%;
+    height: 400px; /* Adjust as needed */
+    border: none;
+  }
+}
+}
